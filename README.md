@@ -21,13 +21,13 @@
  ### Build the Docker Image Inside Minikube
 
  
-   docker build -t qr-app:latest .
+    docker build -t qr-app:latest .
 
  ### Deploy the App
 
-   kubectl apply -f deployment.yaml
-   
-   kubectl apply -f service.yaml
+    kubectl apply -f deployment.yaml
+
+    kubectl apply -f service.yaml
 
  ### Access the App
 
