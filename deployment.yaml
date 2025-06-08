@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qr-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qr
+  template:
+    metadata:
+      labels:
+        app: qr
+    spec:
+      containers:
+      - name: qr
+        image: qr-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
