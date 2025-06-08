@@ -5,7 +5,7 @@
  service.
 
  ## Prerequisites
- 
+
  - Docker
  - Minikube
  - kubectl
@@ -26,6 +26,7 @@
  ### Deploy the App
 
    kubectl apply -f deployment.yaml
+   
    kubectl apply -f service.yaml
 
  ### Access the App
